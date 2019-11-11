@@ -28,7 +28,7 @@ steps:
     file: kubectl/gke/deploy-myapp-db.yaml
     namespace: default
     cluster:
-      name: kevins-cluster
+      name: marcs-cluster
       url:
         $type: Output
         name: k8s_endpoint
@@ -55,7 +55,7 @@ steps:
     file: kubectl/gke/deploy-myapp-frontend.yaml
     namespace: default
     cluster:
-      name: kevins-cluster
+      name: marcs-cluster
       url:
         $type: Output
         name: k8s_endpoint
