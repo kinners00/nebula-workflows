@@ -18,7 +18,7 @@ steps:
         name: gcp-credentials
     git:
       name: nebula-workflows
-      repository: https://github.com/kreeuwijk/nebula-workflows.git
+      repository: https://github.com/kinners00/nebula-workflows.git
       ssh_key: ''
       known_hosts: ''
 - name: kubectl-deploy-app-backend
@@ -43,7 +43,7 @@ steps:
         taskName: terraform-provision-gke
     git: 
       name: nebula-workflows
-      repository: https://github.com/kreeuwijk/nebula-workflows.git
+      repository: https://github.com/kinners00/nebula-workflows.git
       ssh_key: ''
       known_hosts: ''
   dependsOn:
@@ -70,7 +70,7 @@ steps:
         taskName: terraform-provision-gke
     git: 
       name: nebula-workflows
-      repository: https://github.com/kreeuwijk/nebula-workflows.git
+      repository: https://github.com/kinners00/nebula-workflows.git
       ssh_key: ''
       known_hosts: ''
   dependsOn:
