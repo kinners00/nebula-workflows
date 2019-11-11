@@ -44,8 +44,6 @@ resource "google_container_cluster" "demo" {
 
 provider "kubernetes" {
   host = "https://${google_container_cluster.demo.endpoint}"
-  username = "${var.master_username}"
-  password = "${var.master_password}"
   insecure = false
 }
 
