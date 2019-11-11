@@ -44,7 +44,7 @@ resource "google_container_cluster" "demo" {
 
 provider "kubernetes" {
   host = "https://${google_container_cluster.demo.endpoint}"
-  insecure = false
+  insecure = true
 }
 
 resource "kubernetes_service" "myapp-frontend-svc" {
