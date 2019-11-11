@@ -81,7 +81,7 @@ steps:
     apitoken:
       $type: Secret
       name: slack-token
-    channel: "#nebula-workflows"
+    channel: "#marc-nebula-workflows"
     message:
       $type: Output
       name: slack-notification
