@@ -45,8 +45,6 @@ resource "google_container_cluster" "demo" {
 provider "kubernetes" {
   host = "https://${google_container_cluster.demo.endpoint}"
   insecure = false
-  username = "${var.master_username}"
-  password = "${var.master_password}"
 }
 
 resource "kubernetes_service" "myapp-frontend-svc" {
