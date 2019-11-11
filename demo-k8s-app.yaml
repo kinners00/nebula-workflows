@@ -28,7 +28,7 @@ steps:
     file: kubectl/gke/deploy-myapp-db.yaml
     namespace: default
     cluster:
-      name: marcs-cluster
+      name: kevins-cluster
       url:
         $type: Output
         name: k8s_endpoint
@@ -55,7 +55,7 @@ steps:
     file: kubectl/gke/deploy-myapp-frontend.yaml
     namespace: default
     cluster:
-      name: marcs-cluster
+      name: kevins-cluster
       url:
         $type: Output
         name: k8s_endpoint
@@ -81,7 +81,7 @@ steps:
     apitoken:
       $type: Secret
       name: slack-token
-    channel: "#marc-nebula-workflows"
+    channel: "#nebula-workflows"
     message:
       $type: Output
       name: slack-notification
