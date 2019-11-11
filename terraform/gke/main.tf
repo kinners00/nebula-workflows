@@ -1,8 +1,8 @@
 terraform {
   required_version = ">= 0.11.11"
   backend "gcs" {
-    bucket = "puppet-kevins-bucket"
-    prefix = "puppet-kevins"
+    bucket = "marc-demo-bucket"
+    prefix = "marc-demo"
 
   }
 }
@@ -16,7 +16,7 @@ provider "google" {
 data "google_client_config" "current" {}
 
 resource "google_container_cluster" "demo" {
-  name               = "kevins-cluster"
+  name               = "marcs-cluster"
   description        = "Demo K8S cluster"
   location           = "${local.workspace["gcp_location"]}"
   initial_node_count = "${var.initial_node_count}"
