@@ -76,7 +76,7 @@ steps:
   dependsOn:
     - terraform-provision-gke
 - name: slack-notification
-  image: projectnebula/slack-notification
+  image: projectnebula/slack-notification:latest
   spec:
     apitoken:
       $type: Secret
