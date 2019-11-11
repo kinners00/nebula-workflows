@@ -17,6 +17,7 @@ data "google_client_config" "current" {}
 
 resource "google_container_cluster" "demo" {
   name               = "marcs-cluster"
+  project            = "marc-demo-project"
   description        = "Demo K8S cluster"
   location           = "${local.workspace["gcp_location"]}"
   initial_node_count = "${var.initial_node_count}"
