@@ -47,6 +47,7 @@ provider "kubernetes" {
   insecure = true
   username = "${var.master_username}"
   password = "${var.master_password}"
+  version  = "1.9.0"
 }
 
 resource "kubernetes_service" "myapp-frontend-svc" {
