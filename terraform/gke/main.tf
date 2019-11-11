@@ -44,6 +44,7 @@ resource "google_container_cluster" "demo" {
 
 provider "kubernetes" {
   host = "https://${google_container_cluster.demo.endpoint}"
+  load_config_file = false
   insecure = true
 }
 
