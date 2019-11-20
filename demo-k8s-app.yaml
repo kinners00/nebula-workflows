@@ -86,7 +86,8 @@ steps:
       $type: Output
       name: slack-notification
       taskName: terraform-provision-gke
+    confetti: true
+
   dependsOn:
     - kubectl-deploy-app-frontend
     - kubectl-deploy-app-backend
-   confetti: true
