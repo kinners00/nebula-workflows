@@ -89,3 +89,4 @@ steps:
   dependsOn:
     - kubectl-deploy-app-frontend
     - kubectl-deploy-app-backend
+   confetti: true
